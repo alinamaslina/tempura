@@ -1,5 +1,5 @@
 .header,
-.content
+.content,
 .footer
  {
 width: 1110px;
@@ -14,8 +14,21 @@ margin: 0 auto;
     width: 100%; 
  }
 
+.topbar {
+  display: flex;               
+  justify-content: space-between; 
+  align-items: center;        
+  padding: 0 20px;
+}
+.header .navigation1 li {
+    list-style: none;
+    display: inline;
+    margin: 10px;
+    font-family: Arial;
+    font-weight: 800;
+}
 
-.header li {
+.header .navigation2 li {
         text-transform: uppercase;
         list-style: none;
         display: inline;
@@ -24,11 +37,24 @@ margin: 0 auto;
         font-weight: 800;
     }
 
-    .header li a {
+    .header .navigation1 li a {
+        color: black;
+        text-decoration: none;
+    }
+    .header .navigation2 li a {
         color: black;
         text-decoration: none;
     }
 
-    .header li a:hover {
+    .header .navigation1 li a:hover {
         color: gray;
+    }
+
+    .header .navigation2 li a:hover {
+        color: gray;
+    }
+
+    .navigation2 {
+        display: flex;
+        justify-content: space-between;
     }
